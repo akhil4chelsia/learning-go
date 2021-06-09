@@ -6,9 +6,17 @@ func main() {
 
 	poodle := Dog{"Poodle", 10, "Bow!!"}
 	fmt.Printf("Breed is %v \n", poodle.Breed)
+
+	fmt.Println("Weight: ", poodle.Weight)
+	modifyWeight(&poodle)
+	fmt.Println("Weight: ", poodle.Weight)
 	poodle.Speak()
 	poodle.SpeakThreeTimes()
 	poodle.SpeakThreeTimes()
+}
+
+func modifyWeight(poodle *Dog) {
+	poodle.Weight = 20
 }
 
 type Dog struct {

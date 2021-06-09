@@ -25,6 +25,15 @@ func main() {
 		}
 	}
 
+	// Equalent to while true loop
+	value := 1
+	for {
+		if value == 10 {
+			break
+		}
+		value += 1
+	}
+
 	// Goto statement
 	value2 := 1
 	for value2 <= 10 {
