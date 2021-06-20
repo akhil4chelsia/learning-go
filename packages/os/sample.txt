@@ -1,0 +1,10 @@
+The NATS cloud-native messaging ecosystem first came with a 
+simple NATS server based on “At-most once” delivery model that forwards 
+the published messages to consumers without any persistence for the 
+published messages, with an industry leading performance. 
+For some kind of applications, the basic NATS platform is adequate where  
+you don’t need an event streaming platform and can gain the performance 
+benefits as well. With “At-most once” delivery model, if any of the subscriber
+systems, is down while forwarding the messages to subscriber systems by messaging 
+server, then those messages will be missed in subscriber systems and thus 
+there is no guarantee of delivery for the published messages.
