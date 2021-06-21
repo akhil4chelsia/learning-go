@@ -1,9 +1,14 @@
 package main
 import "fmt"
 func main(){
-	var s Shape = &Rectangle{10,20} 
+
+	var s Shape = &Rectangle{10,20}
 	s.Scale(0.5)
 	fmt.Println(s.Area())
+	
+	//Type assersion , similar to instanceOf
+	obj, ok := s.(*Rectangle)
+	fmt.Println(obj, ok)
 }
 
 type Shape interface{
